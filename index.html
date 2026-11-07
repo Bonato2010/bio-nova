@@ -1,0 +1,750 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>BIO NOVA — Biotecnologia & Sustentabilidade | Projetec 2026</title>
+  <meta name="description" content="Portal educativo BIO NOVA sobre Biotecnologia e Sustentabilidade: agricultura regenerativa, biocombustíveis avançados, biorremediação ambiental e bioeconomia circular.">
+  <meta name="keywords" content="bio nova, biotecnologia, sustentabilidade, bioinsumos, biocombustíveis, biorremediação, bioeconomia, meio ambiente, projetec 2026">
+  <meta name="author" content="Equipe BIO NOVA — Projetec 2026">
+  <meta name="theme-color" content="#0a121e">
+
+  <!-- Favicon com símbolo da folha e ciência -->
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><circle cx='50' cy='50' r='48' fill='%230a121e' stroke='%2310b981' stroke-width='4'/><path d='M50 20 C35 35 25 50 35 70 C45 80 65 80 70 65 C75 45 65 30 50 20 Z' fill='%2310b981'/><path d='M42 45 Q50 55 58 45 Q50 65 42 75' stroke='%23ffffff' stroke-width='3' fill='none' stroke-linecap='round'/></svg>">
+
+  <!-- Google Fonts: Inter -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+
+  <!-- Folha de Estilos Otimizada -->
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+
+  <!-- ========================================================================
+       BARRA DE NAVEGAÇÃO SUPERIOR (HEADER)
+       ======================================================================== -->
+  <header class="site-header" id="header">
+    <div class="nav-container">
+      <a href="#introducao" class="brand-logo" aria-label="BIO NOVA Início">
+        <div class="logo-symbol">
+          <svg viewBox="0 0 40 40" width="32" height="32" fill="none">
+            <rect width="40" height="40" rx="10" fill="#10b981" fill-opacity="0.15" stroke="#10b981" stroke-width="1.5"/>
+            <!-- Folha e Espiral Genética Integradas -->
+            <path d="M20 8C13 14 9 21 14 30C19 35 28 35 30 28C32 19 28 12 20 8Z" fill="#10b981"/>
+            <path d="M16 20C20 18 24 22 26 25M15 25C20 23 23 27 24 30" stroke="#0a121e" stroke-width="1.8" stroke-linecap="round"/>
+          </svg>
+        </div>
+        <div class="brand-text">
+          <span class="brand-name">BIO NOVA</span>
+          <span class="brand-tag">Biotecnologia & Sustentabilidade</span>
+        </div>
+      </a>
+
+      <!-- Menu Principal Desktop -->
+      <nav class="nav-menu" id="navMenu">
+        <ul class="nav-list">
+          <li><a href="#introducao" class="nav-link active">Introdução</a></li>
+          <li><a href="#agricultura" class="nav-link">Agricultura</a></li>
+          <li><a href="#energias" class="nav-link">Energias</a></li>
+          <li><a href="#preservacao" class="nav-link">Preservação</a></li>
+          <li><a href="#futuro" class="nav-link">Futuro</a></li>
+          <li><a href="#projetos" class="nav-link">Projetos</a></li>
+          <li><a href="#equipe" class="nav-link">Equipe</a></li>
+        </ul>
+        <a href="https://bonato2010.github.io/vida-simulador/" target="_blank" rel="noopener noreferrer" class="btn-nav-quiz" title="Explorar o Simulador V.I.D.A.">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <path d="M9 11l3 3L22 4"/>
+            <path d="M21 12v7a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h11"/>
+          </svg>
+          <span>Simulador V.I.D.A.</span>
+        </a>
+      </nav>
+
+      <!-- Botão Hambúrguer Mobile -->
+      <button class="menu-toggle" id="menuToggle" aria-label="Abrir Menu de Navegação">
+        <span class="hamburger-bar"></span>
+        <span class="hamburger-bar"></span>
+        <span class="hamburger-bar"></span>
+      </button>
+    </div>
+  </header>
+
+  <!-- ========================================================================
+       SEÇÃO 1: HERO & INTRODUÇÃO À BIOTECNOLOGIA E SUSTENTABILIDADE
+       ======================================================================== -->
+  <section class="section section-hero" id="introducao">
+    <div class="container hero-grid">
+      <div class="hero-content">
+        <div class="badge-pill">
+          <span class="pulse-indicator"></span>
+          <span>CIÊNCIA A FAVOR DA VIDA • PROJETEC 2026</span>
+        </div>
+        <h1 class="hero-title">
+          Biotecnologia e Sustentabilidade: <br>
+          <span class="text-gradient">A Ciência que Regenera o Planeta</span>
+        </h1>
+        <p class="hero-description">
+          A biotecnologia mobiliza o potencial de organismos vivos, enzimas e processos biológicos celulares para substituir recursos fósseis e processos poluentes, edificando uma sociedade ecologicamente sustentável e economicamente justa.
+        </p>
+        <div class="hero-actions">
+          <a href="#agricultura" class="btn btn-primary">
+            <span>Conhecer as Aplicações</span>
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <path d="M5 12h14M12 5l7 7-7 7"/>
+            </svg>
+          </a>
+          <a href="#futuro" class="btn btn-outline">
+            <span>Bioeconomia Circular</span>
+          </a>
+        </div>
+      </div>
+
+      <!-- Card Científico de Destaque -->
+      <div class="hero-card-wrap">
+        <div class="scientific-card">
+          <div class="card-glow-bg"></div>
+          <div class="card-header-icon">
+            <svg width="44" height="44" viewBox="0 0 24 24" fill="none" stroke="#10b981" stroke-width="1.8">
+              <path d="M12 2a10 10 0 0 1 10 10c0 5.5-4.5 10-10 10S2 17.5 2 12A10 10 0 0 1 12 2z"/>
+              <path d="M7 12c2.5-3 7.5-3 10 0M7 16c2.5-3 7.5-3 10 0M8 8c2-2 6-2 8 0"/>
+            </svg>
+          </div>
+          <h3>Conceitos Fundamentais</h3>
+          
+          <div class="concept-item">
+            <div class="concept-bullet green">01</div>
+            <div>
+              <strong>O que é Biotecnologia?</strong>
+              <p>Aplicação tecnológica que utiliza sistemas biológicos, organismos vivos ou seus derivados para sintetizar ou modificar produtos e processos de interesse socioambiental.</p>
+            </div>
+          </div>
+
+          <div class="concept-item">
+            <div class="concept-bullet blue">02</div>
+            <div>
+              <strong>O que é Sustentabilidade?</strong>
+              <p>Modelo de desenvolvimento que atende às demandas presentes sem esgotar o capital ecológico, garantindo a biodiversidade e a resiliência das próximas gerações.</p>
+            </div>
+          </div>
+
+          <div class="concept-item">
+            <div class="concept-bullet amber">03</div>
+            <div>
+              <strong>A Sinergia Ecológica</strong>
+              <p>A aliança entre genética, microbiologia e ecologia viabiliza ciclos fechados de matéria: resíduos transformam-se em insumos limpos de alto valor.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Barra de Indicadores e Estatísticas Verificadas -->
+    <div class="container">
+      <div class="stats-strip">
+        <div class="stat-card">
+          <div class="stat-number" data-target="45">-45%</div>
+          <div class="stat-label">Redução de defensivos químicos sintéticos no campo com uso de bioinsumos</div>
+        </div>
+        <div class="stat-card">
+          <div class="stat-number" data-target="85">-85%</div>
+          <div class="stat-label">Menor emissão de gases estufa nos biocombustíveis avançados de 2ª geração</div>
+        </div>
+        <div class="stat-card">
+          <div class="stat-number" data-target="99">99%</div>
+          <div class="stat-label">Eficiência de degradação em hidrocarbonetos via biorremediação microbiológica</div>
+        </div>
+        <div class="stat-card">
+          <div class="stat-number" data-target="100">100%</div>
+          <div class="stat-label">Biodegradabilidade de polímeros biobaseados derivados de micélio e amido</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========================================================================
+       SEÇÃO 2: AGRICULTURA SUSTENTÁVEL
+       ======================================================================== -->
+  <section class="section section-dark" id="agricultura">
+    <div class="container">
+      <div class="section-heading">
+        <span class="section-tag green-tag">BIOECONOMIA NO CAMPO</span>
+        <h2 class="section-title">Agricultura Sustentável & Segurança Alimentar</h2>
+        <p class="section-subtitle">
+          Como as ferramentas biotecnológicas aumentam a produtividade da lavoura, regeneram a saúde dos solos e minimizam a necessidade de insumos petroquímicos.
+        </p>
+      </div>
+
+      <div class="cards-grid grid-4">
+        <!-- Card 1 -->
+        <div class="feature-box">
+          <div class="feature-icon green-icon">
+            <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <path d="M12 22V12M12 12C12 7 7 4 2 4c0 7 3 12 10 12zM12 12c0-5 5-8 10-8 0 7-3 12-10 12z"/>
+            </svg>
+          </div>
+          <span class="feature-badge">Microbiologia do Solo</span>
+          <h3>Biofertilizantes & FBN</h3>
+          <p>
+            Inoculação de bactérias como <em>Bradyrhizobium</em> e <em>Azospirillum</em> para Fixação Biológica de Nitrogênio (FBN). Capturam o N₂ atmosférico e nutrem as plantas sem causar contaminação de lençóis freáticos.
+          </p>
+          <ul class="feature-list">
+            <li>Substitui fertilizantes nitrogenados à base de petróleo</li>
+            <li>Evita a eutrofização e proliferação de algas tóxicas</li>
+          </ul>
+        </div>
+
+        <!-- Card 2 -->
+        <div class="feature-box">
+          <div class="feature-icon amber-icon">
+            <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <path d="M12 2a4 4 0 0 0-4 4v2H6a2 2 0 0 0-2 2v6a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2v-6a2 2 0 0 0-2-2h-2V6a4 4 0 0 0-4-4z"/>
+              <path d="M9 12v4M15 12v4M12 16v4"/>
+            </svg>
+          </div>
+          <span class="feature-badge">Controle Integrado</span>
+          <h3>Biopesticidas & Manejo Biológico</h3>
+          <p>
+            Agentes microbianos seletivos, como <em>Bacillus thuringiensis</em> (Bt) e o fungo entomopatogênico <em>Beauveria bassiana</em>, eliminam pragas agrícolas sem intoxicar insetos polinizadores vitais como abelhas.
+          </p>
+          <ul class="feature-list">
+            <li>Ação direcionada sem resíduos químicos nos alimentos</li>
+            <li>Zero toxicidade para aves, peixes e polinizadores</li>
+          </ul>
+        </div>
+
+        <!-- Card 3 -->
+        <div class="feature-box">
+          <div class="feature-icon cyan-icon">
+            <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <path d="M21 16V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16z"/>
+              <path d="M3.27 6.96L12 12.01l8.73-5.05M12 22.08V12"/>
+            </svg>
+          </div>
+          <span class="feature-badge">Melhoramento Genético</span>
+          <h3>Cultivares Clima-Resistentes</h3>
+          <p>
+            Edição genética de precisão (CRISPR e marcadores moleculares) para desenvolver variedades de feijão, milho e arroz tolerantes ao estresse térmico, secas prolongadas e salinidade do solo.
+          </p>
+          <ul class="feature-list">
+            <li>Menor demanda por irrigação artificial intensiva</li>
+            <li>Garantia de colheita em cenários de extremos climáticos</li>
+          </ul>
+        </div>
+
+        <!-- Card 4 -->
+        <div class="feature-box">
+          <div class="feature-icon purple-icon">
+            <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <circle cx="12" cy="12" r="9"/>
+              <path d="M12 8v4l3 3M8 12h8"/>
+            </svg>
+          </div>
+          <span class="feature-badge">Saúde Pedológica</span>
+          <h3>Regeneração da Microbiota</h3>
+          <p>
+            Consórcios de fungos micorrízicos arbusculares e leveduras que reconectam a cadeia trófica do solo, sequestrando carbono na matéria orgânica e aumentando a retenção hídrica do terreno.
+          </p>
+          <ul class="feature-list">
+            <li>Recuperação biológica de terras degradadas</li>
+            <li>Aumento natural na absorção de micronutrientes</li>
+          </ul>
+        </div>
+      </div>
+
+      <!-- Painel Comparativo Objetivo -->
+      <div class="comparison-card">
+        <h3 class="comparison-title">Comparativo Científico: Convencional vs. Biotecnologia Sustentável</h3>
+        <div class="comparison-grid">
+          <div class="comparison-col bad">
+            <div class="comp-header">
+              <span class="comp-icon">⚠️</span>
+              <h4>Agricultura Química Tradicional</h4>
+            </div>
+            <ul>
+              <li><strong>Fertilização:</strong> Adubos nitrogenados sintéticos de alta pegada de carbono.</li>
+              <li><strong>Combate a Pragas:</strong> Defensivos de largo espectro que afetam abelhas e polinizadores.</li>
+              <li><strong>Impacto no Solo:</strong> Acidificação, perda gradual da microbiota e salinização.</li>
+              <li><strong>Recursos Hídricos:</strong> Risco frequente de lixiviação e poluição de aquíferos.</li>
+            </ul>
+          </div>
+          <div class="comparison-col good">
+            <div class="comp-header">
+              <span class="comp-icon">🌱</span>
+              <h4>Biotecnologia Sustentável</h4>
+            </div>
+            <ul>
+              <li><strong>Fertilização:</strong> Inoculantes biológicos com fixação natural de N₂ do ar.</li>
+              <li><strong>Combate a Pragas:</strong> Biopesticidas microbiológicos seletivos e biodegradáveis.</li>
+              <li><strong>Impacto no Solo:</strong> Enriquecimento de micorrizas e elevação de matéria orgânica.</li>
+              <li><strong>Recursos Hídricos:</strong> Preservação dos mananciais com zero contaminação sintética.</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========================================================================
+       SEÇÃO 3: ENERGIAS RENOVÁVEIS & BIOCOMBUSTÍVEIS
+       ======================================================================== -->
+  <section class="section" id="energias">
+    <div class="container">
+      <div class="section-heading">
+        <span class="section-tag blue-tag">MATRIZ ENERGÉTICA LIMPA</span>
+        <h2 class="section-title">Energias Renováveis & Biocombustíveis Avançados</h2>
+        <p class="section-subtitle">
+          Como a conversão enzimática e os microrganismos fotossintetizantes viabilizam a transição definitiva dos combustíveis fósseis para fontes renováveis e carbono neutro.
+        </p>
+      </div>
+
+      <div class="cards-grid grid-3">
+        <!-- Bloco 1 -->
+        <div class="energy-card">
+          <div class="energy-pill">2ª Geração</div>
+          <div class="energy-icon">
+            <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="#0ea5e9" stroke-width="2">
+              <path d="M12 2v20M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"/>
+            </svg>
+          </div>
+          <h3>Etanol Celulósico (2G)</h3>
+          <p>
+            Extraído a partir de resíduos vegetais (como bagaço e palha de cana), por meio de hidrólise enzimática. Permite expandir a produção de biocombustível em até 50% na mesma área agrícola, sem competir com culturas alimentares.
+          </p>
+          <div class="energy-metric">
+            <span class="metric-val">+50%</span>
+            <span class="metric-desc">rendimento energético sem desmatar 1 m² adicional</span>
+          </div>
+        </div>
+
+        <!-- Bloco 2 -->
+        <div class="energy-card">
+          <div class="energy-pill">Microalgas</div>
+          <div class="energy-icon">
+            <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="#10b981" stroke-width="2">
+              <path d="M12 2.69l5.66 5.66a8 8 0 1 1-11.31 0z"/>
+            </svg>
+          </div>
+          <h3>Biodiesel de Microalgas</h3>
+          <p>
+            Cultivo intensivo de microalgas fotosintetizantes com alta concentração lipídica. Capturam dióxido de carbono de chaminés industriais e transformam luz solar e CO₂ em lipídios para biodiesel e bioquerosene de aviação (SAF).
+          </p>
+          <div class="energy-metric">
+            <span class="metric-val">10x</span>
+            <span class="metric-desc">mais óleo por hectare do que as lavouras convencionais</span>
+          </div>
+        </div>
+
+        <!-- Bloco 3 -->
+        <div class="energy-card">
+          <div class="energy-pill">Digestão Anaeróbia</div>
+          <div class="energy-icon">
+            <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="#f59e0b" stroke-width="2">
+              <path d="M13 2L3 14h9l-1 8 10-12h-9l1-8z"/>
+            </svg>
+          </div>
+          <h3>Biogás & Biometano</h3>
+          <p>
+            Metanogênese biológica realizada por arqueias anaeróbias que digerem lodo de esgoto, esterco pecuário e resíduos da indústria agroalimentar. O biometano purificado substitui o gás natural fóssil e o diesel em frotas pesadas.
+          </p>
+          <div class="energy-metric">
+            <span class="metric-val">-90%</span>
+            <span class="metric-desc">redução de emissões de metano fugitivo na atmosfera</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- Infográfico Didático do Ciclo Fechado -->
+      <div class="cycle-box">
+        <h3 class="cycle-title">O Ciclo Fechado do Carbono Biogênico</h3>
+        <p class="cycle-desc">
+          Ao contrário do petróleo e do carvão mineral — que liberam carbono retido há milhões de anos no subsolo —, os biocombustíveis participam do ciclo ativo da biosfera:
+        </p>
+        <div class="cycle-flow">
+          <div class="cycle-step">
+            <div class="step-circle">1</div>
+            <h4>Fotossíntese</h4>
+            <p>Plantas e microalgas absorvem CO₂ diretamente da atmosfera.</p>
+          </div>
+          <div class="cycle-arrow">&rarr;</div>
+          <div class="cycle-step">
+            <div class="step-circle">2</div>
+            <h4>Bioconversão</h4>
+            <p>Enzimas transformam a biomassa em biocombustíveis limpos.</p>
+          </div>
+          <div class="cycle-arrow">&rarr;</div>
+          <div class="cycle-step">
+            <div class="step-circle">3</div>
+            <h4>Uso Energético</h4>
+            <p>Combustão controlada gera eletricidade e tração veicular.</p>
+          </div>
+          <div class="cycle-arrow">&rarr;</div>
+          <div class="cycle-step">
+            <div class="step-circle">4</div>
+            <h4>Neutralidade</h4>
+            <p>O mesmo CO₂ volta à atmosfera para ser reabsorvido no próximo plantio.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========================================================================
+       SEÇÃO 4: PRESERVAÇÃO AMBIENTAL & BIORREMEDIAÇÃO
+       ======================================================================== -->
+  <section class="section section-dark" id="preservacao">
+    <div class="container">
+      <div class="section-heading">
+        <span class="section-tag teal-tag">RECUPERAÇÃO DE ECOSSISTEMAS</span>
+        <h2 class="section-title">Biorremediação & Preservação Ambiental</h2>
+        <p class="section-subtitle">
+          Utilização de microrganismos selecionados, enzimas catalíticas e plantas hiperacumuladoras para descontaminar solos, rios e tratar efluentes urbanos e industriais.
+        </p>
+      </div>
+
+      <div class="cards-grid grid-4">
+        <!-- Item 1 -->
+        <div class="remed-card">
+          <div class="remed-header">
+            <span class="remed-tag">Bactérias Degradadoras</span>
+            <div class="remed-num">01</div>
+          </div>
+          <h3>Remediação de Petróleo e Hidrocarbonetos</h3>
+          <p>
+            Linhagens bacterianas especializadas (como <em>Pseudomonas putida</em> e <em>Rhodococcus</em>) metabolizam vazamentos de óleo, solventes clorados e derivados de petróleo, oxidando poluentes letais em dióxido de carbono inerte e água.
+          </p>
+          <div class="remed-footer">
+            <span>Aplicação:</span> Zonas portuárias, refinarias e vazamentos no mar.
+          </div>
+        </div>
+
+        <!-- Item 2 -->
+        <div class="remed-card">
+          <div class="remed-header">
+            <span class="remed-tag">Fitorremediação</span>
+            <div class="remed-num">02</div>
+          </div>
+          <h3>Descontaminação por Raízes de Plantas</h3>
+          <p>
+            Plantas hiperacumuladoras (taboas, aguapés e girassóis) extraem metais pesados como chumbo, cádmio, cromo e níquel de solos industriais e bacias hídricas poluídas, imobilizando toxinas em seus tecidos sem causar lixiviação.
+          </p>
+          <div class="remed-footer">
+            <span>Aplicação:</span> Áreas de mineração e margens de rios urbanos.
+          </div>
+        </div>
+
+        <!-- Item 3 -->
+        <div class="remed-card">
+          <div class="remed-header">
+            <span class="remed-tag">Enzimas Industriais</span>
+            <div class="remed-num">03</div>
+          </div>
+          <h3>Degradação Biológica de Plásticos</h3>
+          <p>
+            Biotecnologia enzimática com enzimas recombinantes (como a PETase e MHETase da bactéria <em>Ideonella sakaiensis</em>) que despolimerizam o plástico PET em poucos dias, retornando o material aos monômeros originais com pureza virgem.
+          </p>
+          <div class="remed-footer">
+            <span>Aplicação:</span> Reciclagem química biológica e redução de microplásticos.
+          </div>
+        </div>
+
+        <!-- Item 4 -->
+        <div class="remed-card">
+          <div class="remed-header">
+            <span class="remed-tag">Saneamento Avançado</span>
+            <div class="remed-num">04</div>
+          </div>
+          <h3>Tratamento de Resíduos & Efluentes</h3>
+          <p>
+            Reatores biológicos de leito fluidizado e filtros bacterianos que degradam matéria orgânica, compostos nitrogenados, desinfetantes e resíduos farmacêuticos em esgotos urbanos, viabilizando o reuso da água tratada.
+          </p>
+          <div class="remed-footer">
+            <span>Aplicação:</span> Estações de tratamento de efluentes (ETE) e indústrias químicas.
+          </div>
+        </div>
+      </div>
+
+      <!-- Caixa de Destaque Científico -->
+      <div class="highlight-banner">
+        <div class="highlight-icon">
+          <svg width="36" height="36" viewBox="0 0 24 24" fill="none" stroke="#10b981" stroke-width="2">
+            <circle cx="12" cy="12" r="10"/>
+            <line x1="12" y1="16" x2="12" y2="12"/>
+            <line x1="12" y1="8" x2="12.01" y2="8"/>
+          </svg>
+        </div>
+        <div class="highlight-text">
+          <h4>Vantagem Ecológica da Biorremediação</h4>
+          <p>
+            Métodos físico-químicos tradicionais frequentemente exigem incineração ou remoção mecânica e transporte de toneladas de terra para aterros. Já a <strong>biorremediação <em>in situ</em></strong> resolve a poluição no próprio local, preservando a integridade física do solo e custando até <strong>70% menos</strong> do que os tratamentos convencionais.
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========================================================================
+       SEÇÃO 5: FUTURO SUSTENTÁVEL & BIOECONOMIA CIRCULAR
+       ======================================================================== -->
+  <section class="section" id="futuro">
+    <div class="container">
+      <div class="section-heading">
+        <span class="section-tag purple-tag">A CIÊNCIA DO AMANHÃ</span>
+        <h2 class="section-title">Futuro Sustentável & Bioeconomia Circular</h2>
+        <p class="section-subtitle">
+          Como a biologia sintética ética, os biomateriais e as metas globais dos Objetivos de Desenvolvimento Sustentável (ODS) constroem o futuro da sociedade.
+        </p>
+      </div>
+
+      <div class="cards-grid grid-3">
+        <!-- Pilar 1 -->
+        <div class="future-pillar">
+          <div class="pillar-icon">
+            <svg width="30" height="30" viewBox="0 0 24 24" fill="none" stroke="#a855f7" stroke-width="2">
+              <path d="M21.21 15.89A10 10 0 1 1 8 2.83"/>
+              <path d="M22 12A10 10 0 0 0 12 2v10z"/>
+            </svg>
+          </div>
+          <h3>Bioplásticos & Biomateriais</h3>
+          <p>
+            Polihidroxialcanoatos (PHA) e espumas de micélio fúngico capazes de substituir o poliestireno (isopor) e plásticos descartáveis. Decompõem-se naturalmente em composteiras domésticas em menos de 180 dias sem deixar microplásticos.
+          </p>
+          <div class="pillar-tag">100% Compostável</div>
+        </div>
+
+        <!-- Pilar 2 -->
+        <div class="future-pillar">
+          <div class="pillar-icon">
+            <svg width="30" height="30" viewBox="0 0 24 24" fill="none" stroke="#0ea5e9" stroke-width="2">
+              <path d="M12 2v4M12 18v4M4.93 4.93l2.83 2.83M16.24 16.24l2.83 2.83M2 12h4M18 12h4M4.93 19.07l2.83-2.83M16.24 7.76l2.83-2.83"/>
+            </svg>
+          </div>
+          <h3>Biologia Sintética Ética</h3>
+          <p>
+            Engenharia de organismos celulares guiada por marcos regulatórios rígidos de biossegurança (CTNBio e Protocolo de Cartagena). Microrganismos sintetizam proteínas ecológicas, fragrâncias verdes e biofármacos com zero sofrimento animal.
+          </p>
+          <div class="pillar-tag">Biossegurança e Ética</div>
+        </div>
+
+        <!-- Pilar 3 -->
+        <div class="future-pillar">
+          <div class="pillar-icon">
+            <svg width="30" height="30" viewBox="0 0 24 24" fill="none" stroke="#10b981" stroke-width="2">
+              <path d="M2 12h20M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"/>
+            </svg>
+          </div>
+          <h3>Metas Globais ODS da ONU</h3>
+          <p>
+            A biotecnologia atua como catalisadora das metas climáticas do planeta: <strong>ODS 2</strong> (Fome Zero e Agricultura Resiliente), <strong>ODS 7</strong> (Energia Acessível e Limpa), <strong>ODS 12</strong> (Produção Responsável) e <strong>ODS 13</strong> (Ação Contra a Mudança Global do Clima).
+          </p>
+          <div class="pillar-tag">Agenda 2030</div>
+        </div>
+      </div>
+
+      <!-- Banner de Ação Educativa / Chamada para o Quiz -->
+      <div class="quiz-cta-banner">
+        <div class="cta-content">
+          <div class="cta-badge">EXPERIÊNCIA INTERATIVA</div>
+          <h3>Pronto para testar seus conhecimentos?</h3>
+          <p>
+            Acesse a plataforma de Quiz interativo V.I.D.A., responda perguntas de nível técnico sobre biotecnologia, bioinsumos e energias renováveis e conquiste seu lugar no Ranking Oficial da Projetec 2026!
+          </p>
+        </div>
+        <div class="cta-btn-wrap">
+          <a href="/" class="btn btn-cta">
+            <span>Iniciar Quiz V.I.D.A.</span>
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <path d="M5 12h14M12 5l7 7-7 7"/>
+            </svg>
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========================================================================
+       SEÇÃO: EQUIPE BIO NOVA
+       ======================================================================== -->
+  <section class="section section-dark" id="equipe">
+    <div class="container">
+      <div class="section-heading">
+        <span class="section-tag green-tag">Liderança & Pesquisa Científica</span>
+        <h2 class="section-title">NOSSA EQUIPE</h2>
+        <p class="section-subtitle">
+          Profissionais e pesquisadores dedicados ao avanço da biotecnologia, sustentabilidade e inovação na Projetec 2026.
+        </p>
+      </div>
+
+      <div class="team-grid">
+        <!-- 1. Professora Amanda (Professora Representante) -->
+        <div class="team-card featured-primary">
+          <div class="team-avatar">PA</div>
+          <span class="team-badge badge-prof">Professora Representante</span>
+          <h3>Professora Amanda</h3>
+          <p class="team-roles">Orientação pedagógica, representação institucional e supervisão geral do projeto científico.</p>
+        </div>
+
+        <!-- 2. Daniel de Mello Bonatto (Aluno Coordenador) -->
+        <div class="team-card featured-coordinator">
+          <div class="team-avatar">DB</div>
+          <span class="team-badge badge-coord">Aluno Coordenador</span>
+          <h3>Daniel de Mello Bonatto</h3>
+          <p class="team-roles">• Aluno Coordenador<br>• Gerente de Tecnologia e Pesquisa<br>• Pesquisador</p>
+        </div>
+
+        <!-- 3. Yasmin Vitória (Vice-coordenadora) -->
+        <div class="team-card featured-vice">
+          <div class="team-avatar">YV</div>
+          <span class="team-badge badge-vice">Vice-coordenadora</span>
+          <h3>Yasmin Vitória</h3>
+          <p class="team-roles">• Vice-coordenadora<br>• Gerente de Pesquisa e Produção</p>
+        </div>
+
+        <!-- 4. Lucas Cordeiro -->
+        <div class="team-card">
+          <div class="team-avatar">LC</div>
+          <span class="team-badge badge-member">Pesquisa & Apoio</span>
+          <h3>Lucas Cordeiro</h3>
+          <p class="team-roles">• Pesquisador<br>• Colaborador</p>
+        </div>
+
+        <!-- 5. Maria Eduarda Leite -->
+        <div class="team-card">
+          <div class="team-avatar">ML</div>
+          <span class="team-badge badge-member">Pesquisa & Design</span>
+          <h3>Maria Eduarda Leite</h3>
+          <p class="team-roles">• Pesquisadora<br>• Produtora<br>• Designer</p>
+        </div>
+
+        <!-- 6. Ana Clara Nascimento -->
+        <div class="team-card">
+          <div class="team-avatar">AC</div>
+          <span class="team-badge badge-member">Pesquisa & Design</span>
+          <h3>Ana Clara Nascimento</h3>
+          <p class="team-roles">• Pesquisadora<br>• Produtora<br>• Designer</p>
+        </div>
+
+        <!-- 7. João Pedro Roldão -->
+        <div class="team-card">
+          <div class="team-avatar">JP</div>
+          <span class="team-badge badge-member">Pesquisa Científica</span>
+          <h3>João Pedro Roldão</h3>
+          <p class="team-roles">• Pesquisa</p>
+        </div>
+
+        <!-- 8. Isaac Allison -->
+        <div class="team-card">
+          <div class="team-avatar">IA</div>
+          <span class="team-badge badge-member">Tecnologia & TI</span>
+          <h3>Isaac Allison</h3>
+          <p class="team-roles">• Colaborador de Tecnologia da Informação (TI)<br>• Desenvolvimento Tecnológico</p>
+        </div>
+
+        <!-- 9. Jean -->
+        <div class="team-card">
+          <div class="team-avatar">JE</div>
+          <span class="team-badge badge-member">Pesquisa & Apoio</span>
+          <h3>Jean</h3>
+          <p class="team-roles">• Pesquisador<br>• Colaborador</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========================================================================
+       SEÇÃO: ACESSE NOSSOS PROJETOS (QR CODES)
+       ======================================================================== -->
+  <section class="section" id="projetos">
+    <div class="container">
+      <div class="section-heading">
+        <span class="section-tag emerald-tag">MULTITELA & GÊMEO DIGITAL</span>
+        <h2 class="section-title">ACESSE NOSSOS PROJETOS</h2>
+        <p class="section-subtitle">
+          Explore o portal educativo Bio Nova e a plataforma interativa EcoCity / V.I.D.A. diretamente em seu dispositivo móvel no stand da Projetec 2026.
+        </p>
+      </div>
+
+      <div class="cards-grid grid-2" style="display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 24px; max-width: 800px; margin: 0 auto;">
+        <!-- Card 1: Portal Bio Nova -->
+        <div class="scientific-card" style="text-align: center; background: var(--bg-card); border: 1px solid var(--border-glow); border-radius: var(--radius-md); padding: 28px;">
+          <div style="background: #fff; padding: 12px; display: inline-block; border-radius: 12px; margin-bottom: 16px; box-shadow: 0 4px 20px rgba(16, 185, 129, 0.25);">
+            <img src="assets/qr-code/qr-bio-nova.svg" alt="QR Code Portal Bio Nova" style="width: 160px; height: 160px; object-fit: contain;">
+          </div>
+          <h3 style="font-size: 18px; font-weight: 800; color: #fff; margin-bottom: 8px;">Portal Bio Nova</h3>
+          <p style="font-size: 13px; color: var(--text-muted); margin-bottom: 16px;">Biotecnologia, bioinsumos, energias renováveis e sustentabilidade aplicada.</p>
+          <a href="./index.html" class="btn btn-primary" style="display: inline-block; padding: 10px 20px; font-size: 12px;">Acessar Portal Bio Nova</a>
+        </div>
+
+        <!-- Card 2: EcoCity / V.I.D.A. -->
+        <div class="scientific-card" style="text-align: center; background: var(--bg-card); border: 1px solid var(--border-glow); border-radius: var(--radius-md); padding: 28px;">
+          <div style="background: #fff; padding: 12px; display: inline-block; border-radius: 12px; margin-bottom: 16px; box-shadow: 0 4px 20px rgba(14, 165, 233, 0.25);">
+            <img src="assets/qr-code/qr-vida.png" alt="QR Code EcoCity V.I.D.A." style="width: 160px; height: 160px; object-fit: contain;">
+          </div>
+          <h3 style="font-size: 18px; font-weight: 800; color: #fff; margin-bottom: 8px;">EcoCity / V.I.D.A.</h3>
+          <p style="font-size: 13px; color: var(--text-muted); margin-bottom: 16px;">Central de Operações Urbanas, Quiz interativo e Gêmeo Digital Carioca.</p>
+          <a href="https://bonato2010.github.io/vida-simulador/" target="_blank" rel="noopener noreferrer" class="btn btn-primary" style="display: inline-block; padding: 10px 20px; font-size: 12px; background: linear-gradient(135deg, #0ea5e9, #0284c7);">Acessar Simulador V.I.D.A.</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========================================================================
+       RODAPÉ OFICIAL (FOOTER)
+       ======================================================================== -->
+  <footer class="site-footer">
+    <div class="container footer-content">
+      <div class="footer-brand">
+        <div class="footer-logo">
+          <svg viewBox="0 0 40 40" width="28" height="28" fill="none">
+            <rect width="40" height="40" rx="8" fill="#10b981" fill-opacity="0.2" stroke="#10b981" stroke-width="1.5"/>
+            <path d="M20 8C13 14 9 21 14 30C19 35 28 35 30 28C32 19 28 12 20 8Z" fill="#10b981"/>
+          </svg>
+          <span>BIO NOVA</span>
+        </div>
+        <p class="footer-tagline">
+          Plataforma Educativa BIO NOVA de Biotecnologia & Sustentabilidade • Projetec 2026. <br>
+          Conteúdo com embasamento científico nas diretrizes da EMBRAPA, CTNBio, IPCC e ONU Meio Ambiente.
+        </p>
+      </div>
+
+      <div class="footer-nav">
+        <h4>Navegação Rápida</h4>
+        <ul>
+          <li><a href="#introducao">Introdução</a></li>
+          <li><a href="#agricultura">Agricultura Sustentável</a></li>
+          <li><a href="#energias">Energias Renováveis</a></li>
+          <li><a href="#preservacao">Preservação Ambiental</a></li>
+          <li><a href="#futuro">Bioeconomia & Futuro</a></li>
+          <li><a href="#equipe">Equipe</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-nav">
+        <h4>Ecossistema</h4>
+        <ul>
+          <li><a href="https://bonato2010.github.io/vida-simulador/" target="_blank" rel="noopener noreferrer">Simulador V.I.D.A. (Pixel Art 2D)</a></li>
+          <li><a href="https://bonato2010.github.io/vida-simulador/controle.html" target="_blank" rel="noopener noreferrer">Controle do Visitante Mobile</a></li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="footer-bottom">
+      <div class="container footer-bottom-inner">
+        <p>&copy; 2026 BIO NOVA • Feira Tecnológica Projetec. Todos os direitos reservados.</p>
+        <p class="footer-badge">Desenvolvido com Foco em Velocidade, Ciência e Preservação</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Botão de Voltar ao Topo -->
+  <button id="btnBackToTop" class="back-to-top" aria-label="Voltar ao início">
+    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
+      <path d="M18 15l-6-6-6 6"/>
+    </svg>
+  </button>
+
+  <!-- Script Leve e Modular -->
+  <script src="js/app.js"></script>
+</body>
+</html>
